@@ -1,4 +1,4 @@
-# rick-and-morty APP
+# rick-and-morty-APP
 
 rick and morty app is a simple app to query Rick and morty characters and learn about them.
 
@@ -6,15 +6,9 @@ rick and morty app is a simple app to query Rick and morty characters and learn 
 
 ```bash
 
-git clone https://github.com/gastonnicolas1991/rick-and-morty
-cd rick-and-morty/server
+git clone https://github.com/gastonnicolas1991/rick-and-morty-app
+cd rick-and-morty-app/client
 npm run i
-npm run start
-
-cd..
-
-cd client
-npm i
 npm run start
 
 ```
