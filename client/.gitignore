@@ -1,0 +1,11 @@
+#node_modules
+/node_modules
+
+#others
+.cache
+.vscode
+.env
+npm-debug.log*
+
+#storybook
+/storybook-static

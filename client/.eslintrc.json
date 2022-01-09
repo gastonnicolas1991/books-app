@@ -1,0 +1,43 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:testing-library/recommended",
+    "plugin:jest-dom/recommended"
+  ],
+  "plugins": ["jest", "react-hooks", "testing-library", "jest-dom"],
+  "rules": {
+    "arrow-parens": "off",
+    "semi": "off",
+    "react/display-name": "off",
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+    "import/prefer-default-export": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/semi": "off",
+    "comma-dangle": "off",
+    "jsx-a11y/accessible-emoji": "off",
+    "no-console": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/js-one-expression-per-line": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [["src", "./src"]],
+        "extensions": [".js"]
+      },
+      "node": {
+        "extensions": [".js"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  }
+}
