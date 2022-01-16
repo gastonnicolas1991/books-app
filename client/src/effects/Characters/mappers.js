@@ -7,5 +7,6 @@ export const mapDataToCharactersList = data => {
     status: character.status,
     statusActive: character.status === 'Alive',
     imageUrl: character.image,
+    id: character.id,
   }));
 };

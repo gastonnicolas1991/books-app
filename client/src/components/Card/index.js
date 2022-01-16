@@ -67,7 +67,7 @@ Card.propTypes = {
   status: PropTypes.string.isRequired,
   origin: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
-  isFav: PropTypes.bool.isRequired,
+  isFav: PropTypes.bool,
 };
 
 export default Card;

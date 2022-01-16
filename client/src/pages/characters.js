@@ -20,7 +20,7 @@ const Characters = () => {
       <>
         <Header>Rick and Morty</Header>
         {characters?.map(item => (
-          <Card {...item} />
+          <Card key={`${item.name}-${item.id}`} {...item} />
         ))}
       </>
     </CharactersBase>
