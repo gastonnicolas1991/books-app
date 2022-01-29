@@ -1,24 +1,26 @@
-# rick-and-morty-APP
+# books-app
 
-rick and morty app is a simple app to query Rick and morty characters and learn about them.
+Books app is a simple app to query an API (faked in this case) a list of books and detailed information.
 
 ## Installation
 
 ```bash
 
-git clone https://github.com/gastonnicolas1991/rick-and-morty-app
-cd rick-and-morty-app/client
+unzip the file
+cd app/server
+npm run i
+npm run start
+cd ..
+cd client
 npm run i
 npm run start
 
 ```
-We should see it running on: http://localhost:3000/
+We should see the client running on: http://localhost:3000/
+We should see the server running on: http://localhost:3004/
 
 ## Responsive
 There are three sizes: mobile (default), tablet (up to 480px) and desktop (up to 1280px).
-
-<img width="400" alt="Screenshot 2022-01-08 at 20 21 14" src="https://user-images.githubusercontent.com/97299740/148656988-d6e9a637-e673-40df-bdc7-6e6ba72305fa.png">      <img width="400" alt="Screenshot 2022-01-08 at 20 20 53" src="https://user-images.githubusercontent.com/97299740/148656994-91317172-6edd-48c7-8fff-339974e0ac49.png">
-
 
 ## Tooling
 
@@ -27,20 +29,33 @@ There are three sizes: mobile (default), tablet (up to 480px) and desktop (up to
 - ESlint
 - React.js 
 - Styled Components
-- Node.js
 - Axios
+- Redux Sagas
+- React Router 
   
 ## Storybook
 
 Components were built isolated in Storybook. The idea is them to be as dummiest as possible and inject behavior from its context, in the client project.
 
 ```bash
-cd rick-and-morty/client
+cd app/client
 npm run storybook
 
 ```
 We should see it running on: http://localhost:6006/
 
+## Unit Testing
+
+cd app/client
+npm run test
+
+## Services 
+
+1) Get The list of books -> API/items
+2) Get the detail of an specific book ->  API/items/{id}
+
 ## Notes 
 
 - Make sure you have Node.js up to version 12 cause previous versions could have issues with some libraries
+- Server should be running while using client to have an available API.
+- The offset and limit params should be sent to the requestByGet in the list of books request, but as I did not implemented the pagination on the client side, I did not send those parameters either. Should be extended to fulfill those requirements.

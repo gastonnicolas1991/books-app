@@ -41,10 +41,12 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './public'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   devServer: {
     port: 3000,
     open: true,
+    historyApiFallback: true,
     static: {
       directory: path.resolve(__dirname, 'public'),
     },

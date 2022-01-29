@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "link": "/api/v1/items/1",
+      "title": "Steppenwolf",
+      "image": "http://bookcoverarchive.com/wp-content/uploads/2015/09/Near-to-the-Wild-Heart.jpg",
+      "author": "J.K Rowling",
+      "price": 5.99
+    },
+    {
+      "id": 2,
+      "link": "/api/v1/items/2",
+      "title": "The Wizard of Oz",
+      "image": "http://bookcoverarchive.com/wp-content/uploads/2010/09/lost_decades.large_.jpg",
+      "author": "",
+      "price": 8.99
+    },
+    {
+      "id": 3,
+      "link": "/api/v1/items/3",
+      "title": "Steppenwolf",
+      "image": "http://bookcoverarchive.com/wp-content/uploads/2015/09/Near-to-the-Wild-Heart.jpg",
+      "author": "",
+      "price": 5.99
+    },
+    {
+      "id": 4,
+      "link": "/api/v1/items/4",
+      "title": "The Wizard of Oz",
+      "image": "http://bookcoverarchive.com/wp-content/uploads/2010/09/lost_decades.large_.jpg",
+      "author": "",
+      "price": 5.99
+    },
+    {
+      "id": 5,
+      "link": "/api/v1/items/5",
+      "title": "Steppenwolf",
+      "image": "http://bookcoverarchive.com/wp-content/uploads/2015/09/Near-to-the-Wild-Heart.jpg",
+      "author": "",
+      "price": 5.99
+    },
+    {
+      "id": 6,
+      "link": "/api/v1/items/6",
+      "title": "The Wizard of Oz",
+      "image": "http://bookcoverarchive.com/wp-content/uploads/2015/09/Near-to-the-Wild-Heart.jpg",
+      "author": "",
+      "price": 9.99
+    },
+    {
+      "id": 7,
+      "link": "/api/v1/items/7",
+      "title": "Steppenwolf",
+      "image": "http://bookcoverarchive.com/wp-content/uploads/2010/09/lost_decades.large_.jpg",
+      "author": "Kate Austen",
+      "price": 10.99
+    },
+    {
+      "id": 8,
+      "link": "/api/v1/items/8",
+      "title": "The Wizard of Oz",
+      "image": "http://bookcoverarchive.com/wp-content/uploads/2015/09/Near-to-the-Wild-Heart.jpg",
+      "author": "",
+      "price": 5.99
+    },
+    {
+      "id": 9,
+      "link": "/api/v1/items/9",
+      "title": "Steppenwolf",
+      "image": "http://bookcoverarchive.com/wp-content/uploads/2010/09/lost_decades.large_.jpg",
+      "author": "",
+      "price": 5.99
+    },
+    {
+      "id": 10,
+      "link": "/api/v1/items/10",
+      "title": "The Wizard of Oz",
+      "image": "http://bookcoverarchive.com/wp-content/uploads/2010/09/lost_decades.large_.jpg",
+      "author": "",
+      "price": 5.99
+    }
+  ]
+}

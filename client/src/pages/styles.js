@@ -1,14 +1,21 @@
 import styled from 'styled-components';
-import { CardBase } from 'src/components/Card/styles';
-import { media } from 'src/styles/media';
-import colors from 'src/styles/colors';
+import { media } from '../styles/media';
+import colors from '../styles/colors';
 
-export const CharactersBase = styled.div`
+export const BookListBase = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin: 20px;
 
-  padding: 20px;
   background-color: ${colors.black};
+
+  a {
+    text-decoration: none;
+
+    ${media.tablet} {
+      margin-right: 20px;
+    }
+  }
 
   ${media.tablet} {
     justify-content: center;
@@ -18,10 +25,6 @@ export const CharactersBase = styled.div`
     justify-content: flex-start;
     margin: auto;
     max-width: 1300px;
-  }
-
-  ${CardBase} {
-    margin: 15px;
   }
 `;
 

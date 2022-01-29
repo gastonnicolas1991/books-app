@@ -1,36 +1,39 @@
 import {
-  CHARACTER_LIST_REQUEST,
-  CHARACTER_LIST_SUCCESS,
-  CHARACTER_LIST_FAILURE,
-  CHARACTERS_STATE,
+  BOOK_DETAIL_STATE,
+  BOOK_DETAIL_SUCCESS,
+  BOOK_DETAIL_REQUEST,
+  BOOK_DETAIL_FAILURE,
 } from './constants';
 import stateBase from './state';
 
-const initialState = stateBase[CHARACTERS_STATE];
+const initialState = stateBase[BOOK_DETAIL_STATE];
 
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
-    case CHARACTER_LIST_REQUEST:
+    case BOOK_DETAIL_REQUEST:
       return {
         ...state,
         error: null,
         isFetching: true,
-        characters: null,
+        book: null,
       };
-    case CHARACTER_LIST_SUCCESS:
+
+    case BOOK_DETAIL_SUCCESS:
       return {
         ...state,
         error: null,
         isFetching: false,
-        characters: action.payload.characters,
+        book: action.payload.book,
       };
-    case CHARACTER_LIST_FAILURE:
+
+    case BOOK_DETAIL_FAILURE:
       return {
         ...state,
         error: action.payload.error,
         isFetching: false,
-        characters: null,
+        book: null,
       };
+
     default:
       return state;
   }

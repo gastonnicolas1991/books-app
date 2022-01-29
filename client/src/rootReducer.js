@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
 
-import characters from './effects/Characters/reducer';
+import books from './effects/Books/reducer';
+import book from './effects/BookDetails/reducer';
 
 const createRootReducer = () =>
   combineReducers({
-    characters,
+    books,
+    book,
   });
 
 export default createRootReducer;
